@@ -7,9 +7,15 @@
     <title>Venys</title>
     <link rel="stylesheet" href="css\style.css">
 
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
+
+    <a href="#home" class="scroll-top">
+        <i class='bx bx-up-arrow-alt'></i>
+    </a>
 
     <header>
         <div class="nav container">
@@ -32,7 +38,7 @@
         </div>
     </header>
     
-    <section class="home container="home">
+    <section class="home container" id="home">
         <div class="home-content">
             <div class="home-img">
                 <img src="img/perfil.jpg" alt="">
@@ -99,10 +105,147 @@
 
     <section class="portfolio container" id="portfolio">
         <h2 class="heading">Portfolio</h2>
+
+        <div class="portfolio-content">
+            <div class="portfolio-box">
+                <img src="img\panther.png" alt="" class="portfolio-img">
+                <div class="portfolio-overlay"> 
+                    <h2>Web Development</h2>
+                    <a href="#">
+                        <i class='bx bx-link-alt'></i>
+                    </a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="img\brocagabg.png" alt="" class="portfolio-img">
+                <div class="portfolio-overlay">
+                    <h2>Back-End Development</h2>
+                    <a href="#">
+                        <i class='bx bx-link-alt'></i>
+                    </a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="img\muaythai.jpg" alt="" class="portfolio-img">
+                <div class="portfolio-overlay">
+                    <h2>System Tester</h2>
+                    <a href="#">
+                        <i class='bx bx-link-alt'></i>
+                    </a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="img\unknown.png" alt="" class="portfolio-img">
+                <div class="portfolio-overlay">
+                    <h2>System Tester</h2>
+                    <a href="#">
+                        <i class='bx bx-link-alt'></i>
+                    </a>
+                </div>
+            </div>
+        </div>
     </section>
     
+    <section class="projects container" id="projects">
+        <h2 class="heading">Projects</h2>
+        <div class="projects-content">
+            <div class="project-box">
+                <h2>11+</h2>
+                <span>Projects Completed</span>
+            </div>
+            <div class="project-box">
+                <h2>7+</h2>
+                <span>Websites Develop</span>
+            </div>
+            <div class="project-box">
+                <h2>12+</h2>
+                <span>Tests Apply</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="container reviews" id="reviews">
+        <h2 class="heading">Reviews</h2>
+
+        <div class="reviews-content swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="review-box">
+                        <i class='bx bxs-quote-right'></i>
+                        <p class="review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <div class="review-profile">
+                            <h2>Audrey Bella</h2>
+                            <span>From Finland</span>
+                            <img src="img/muaythai.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="review-box">
+                        <i class='bx bxs-quote-right'></i>
+                        <p class="review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <div class="review-profile">
+                            <h2>Audrey Bella</h2>
+                            <span>From Finland</span>
+                            <img src="img/muaythai.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="review-box">
+                        <i class='bx bxs-quote-right'></i>
+                        <p class="review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <div class="review-profile">
+                            <h2>Audrey Bella</h2>
+                            <span>From Finland</span>
+                            <img src="img/muaythai.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                
+        </div>
+    </section>
+
+    <section class="contact container" id="contact">
+        <h2 class="heading">Contact</h2>
+
+        <form action="" class="contact-form" id="contact-form">
+            <input type="text" placeholder="Your Name" class="name" required>
+            <input type="email" name="" id="" placeholder="Email address..." class="email" required>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Write meessage here" class="message" required></textarea>
+            <input type="submit" value="Send" class="send-btn">
+        </form>
+    </section>
+
+    <section class="footer container" id="footer">
+        <div class="social">
+            <a href="#"><i class="bx bxl-github"></i></a>
+            <a href="#"><i class="bx bxl-instagram"></i></a>
+            <a href="#"><i class="bx bxl-linkedin"></i></a>
+        </div>
+        <div class="footer-links">
+            <a href="#">Terms Of Use</a>
+            <a href="#">Disclaimer</a>
+        </div>
+
+        <p>&#169; Venys</p>
+    </section>
+
     
-    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        <script type="text/javascript">
+            (function(){
+                emailjs.init("0YN9DDw1B4P2u3VP_");
+            })();    
+        </script>
+
+    <script src="js\swiper-bundle.min.js"></script>
     
     <script src="js/main.js"></script>
 </body>
